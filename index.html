@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Elijah's website </title>  
+        <style>
+    body {
+        background: rgb(125, 198, 205);
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(280, 20, 240);
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+    }
+    h1 {
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+        margin: 0;
+    }
+    #nav-ul {
+        list-style-image: none;
+    }
+    .nav-li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(245, 238, 219);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar-img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    #interests {
+        border: 4px silver ridge;
+        padding: 8px;
+    }
+    h2, h3 {
+        margin: 0px;
+    }
+</style>      
+
+    </head>
+
+    <body>
+        <!--all content goes here-->
+        <div id="all-contents"> 
+            <nav>
+                <h1>Elijah's groovy website</h1>
+                <ul id="nav-ul">
+                    <li class="nav-li">
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li class="nav-li">
+                        <a href="portfolio.html"> Portfolio </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main>
+                <!--sidebare section-->
+                <div class="sidebar">
+                    <img class="sidebar-image" src="data:image/jpeg;base64,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">
+                </div>
+
+                <!--content section-->
+                <div class="content"> 
+                     <h2> Elijah sylvester price </h2>
+                     <p> student at klein high </p>
+                     <!--interest section-->
+                     <div id="interests">
+                        <h3> My interests </h3>
+                        <ul>
+                            <li> video games </li>
+                            <li> reading </li>
+                            <li> trying new foods </li> 
+                        </ul>
+                     </div>
+                </div>
+            </main>
+
+        
+        </div>
+    </body>
+</html>
